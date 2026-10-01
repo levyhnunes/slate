@@ -25,6 +25,15 @@ flutter pub get
 flutter run
 ```
 
+It runs on iOS, Android and the web. For the web:
+
+```sh
+flutter run -d chrome   # development
+flutter build web       # production build in build/web
+```
+
+On wide screens the app stays at phone width, centered.
+
 ## Project structure
 
 ```

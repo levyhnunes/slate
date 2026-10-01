@@ -3,6 +3,7 @@ import 'package:flutter/services.dart';
 
 import 'package:slate/screens/splash_screen.dart';
 import 'package:slate/theme/app_theme.dart';
+import 'package:slate/widgets/common/phone_frame.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
@@ -19,6 +20,7 @@ class SlateApp extends StatelessWidget {
       title: 'Slate',
       debugShowCheckedModeBanner: false,
       theme: AppTheme.light,
+      builder: (context, child) => PhoneFrame(child: child!),
       home: const SplashScreen(),
     );
   }
